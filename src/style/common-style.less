@@ -2,12 +2,44 @@
 
 font-family: pretty_font;
 src: url('../fonts/14704.ttf');
-
 }
 
 
 .font-example{
 font-family: pretty_font,'Trebuchet MS', Arial, sans-serif;
-
-
+padding-top: 90px;
 }
+.position-fixed{
+
+position: fixed;
+top: 20px;
+left: 0;
+height:70px;
+width: 100%;
+background-color: greenyellow;
+}
+
+.position-absolute{
+
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 100px;
+    width: 100px;
+    border: 1px solid red; 
+    }
+
+    .position-relative{
+        width: 200px;
+        height: 200px;
+        outline: 1px solid blue;
+    }
+
+    .inner-relative{
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    outline: 1px solid green;
+    }
