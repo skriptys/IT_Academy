@@ -1,77 +1,47 @@
-body{
-padding-top: 100px;
-}
 
-.block{
-outline: 1px solid red;
-}
+.wrapper{
+width: 1200px;
+height: 500px;
+background-color: yellow;
 
-.parent{
-height: 300px;
-width: 400px;
-margin: 0 auto;
-position: relative;
 }
-
-.child{
-width:50%;
-height: 50%;
-}
-
-.additional{
-height: 150px;
-width: 400px;
-margin: 15px auto;
-}
-
-.center{
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translateX(-50%) translateY(-50%);
+.item{
+height: 600px;
+width: 800px;
+background-color: red;
 
 }
 
-.center .class3{
-    background: red;
+@media (max-width: 640px){
+.wrapper {
+    width: 640px;
+height: 400px;
+background-color: blue; 
 }
 
-.parent .class3{
-    background: red;
+.item{
 
-   }
+width: 320px;
+height: 200px;
+background-color: chartreuse;
 
-   .block.class2.additional{
-    border-bottom-right-radius: 50% 30px;
-    border-bottom-left-radius: 50% 30px;
-    background: red;
-
-   }
-
-   .container{
-outline: 1px dotted yellowgreen;
-
-   }
-
-   .item{
-height: 100px;
-
-   }
-
-   .left-nav, .right-nav, .main-content{
-display: inline-block;
-   }
-
-   .main-content{
-    width:calc (100vw-400px);
 }
-   
-.left-nav, .right-nav{
-width: 200px;
-background-color: aqua;
 }
 
-.right-nav{
+@media (min-width:320px) and (max-width: 500px){
+.wrapper{
 
-    float: right;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+
 }
+.item{
+
+    display: none;
+}
+}
+
+
+
+
