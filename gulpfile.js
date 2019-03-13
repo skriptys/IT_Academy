@@ -36,7 +36,7 @@ var config = {
   server: {
     baseDir: "./distr"
   },
-  tunnel: true,
+  tunnel: false,
   host: 'localhost',
   port: 9000,
   logPrefix: "Frontend_Devil"
