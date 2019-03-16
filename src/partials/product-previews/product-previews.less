@@ -2,3 +2,41 @@
     max-width: 100%;
     min-height: 100%;
 }
+
+.product-preview{
+    position: relative;
+    padding: 5px;
+    border: 1px solid grey;
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+&--big{
+    display: none;
+    padding: 15px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 600px;
+    z-index: 1;
+    background-color: #fff;
+      
+    img{
+    border: 1 px dotted rgba(125, 125, 128, 0.067);
+    
+    }  
+}
+
+&:hover>img{
+opacity: .5;
+
+}
+
+&:hover .product-preview--big{
+    display: block;
+}
+
+}
