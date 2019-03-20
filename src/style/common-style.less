@@ -2,3 +2,52 @@
 outline: 1px solid red;
 
 }
+
+body{
+
+    padding-top: 50px;
+}
+
+label{
+
+    display: block;
+    position: fixed; top: 0px;
+}
+
+form{
+
+    margin: 50px;
+    outline: 1px solid red;
+}
+
+[type= "radio"]:checked~label{
+
+color: aqua;
+
+}
+.accordion{
+width: 500px;
+margin: 0 auto;
+
+&_capture,
+&descriprion{
+border: 1px solid black;
+}
+}
+
+#close:checked~ .accordion__description{
+
+    height: 0px;
+    overflow: hidden;
+}
+
+#close:checked~ .accordion__capture[for="close"] 
+{
+    display: none;
+}
+
+#close:checked~ .accordion__capture[for="open"] 
+{
+    display: none;
+}
+

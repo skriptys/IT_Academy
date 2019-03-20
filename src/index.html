@@ -11,22 +11,48 @@
 </head>
 
 <body>
+<form action="/fff" type ="post">
+<label for="inp">
+    login
+<input type="text" name="inp" id="inp">
+</label>
+<label for="check-box">
+    Checkbox
+<input type="checkbox" name="checkbox" id="check-box">
+<input type="submit" value="submit">
+</label>
+<label for="radio">
+    radio1
+<input type="radio"  name="radio" id="radio1" value="radio1">
+</label>
+<label for="radio1">
+        radio2
+    <input type="radio"  name="radio" id="radio2" value="radio2">
+    </label>
+    <label for="radio">
+            radio3
+        <input type="radio"  name="radio" id="radio3" value="radio3">
+        </label>
 
-    <div class="container">
-        <div class="row">
-          <div class="col col-md-12"></div>
-          <div class="col col-md-12"></div>
-          </div>
-       <h1>Hello World!</h1>
-    </div>
-            
+</form>
+       
+<div class="accordion">
+<input type="radio" name="accordion" id="open">
+<input type="radio" name="accordion" id="close">
+
+<div class="accordion__capture">
+
+    <label for="open">open</label>
+    <label for="close">close</label>
+Accordion 
+</div>
+ 
+<div class="accordion__description">
+    Lorem ipsum dolor sit amet 
+    consectetur adipisicing elit. 
+</div>
+</div>
 </body>
 
-<form action="/fff" type ="post">
-<label for="">
-<input type="text">
-<input type="submit" value="submit">
 
-</label>
-</form>
 </html>
