@@ -15,13 +15,13 @@ function Fuctorial(num){
 
 if (num > 1){
 
-return num* Fuctorial(num-1);
+return num * Fuctorial(num - 1);
 }else {
     return 1;
 }
 }
 var result = 1;
-for (var i=1; i<==3; i++){
+for (var i = 1; i <= 3; i++){
 result = result * i;
 
 }
