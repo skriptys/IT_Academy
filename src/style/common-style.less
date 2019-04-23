@@ -1,0 +1,26 @@
+
+.main-wrapper{
+max-width: 1024px;
+margin: 0 auto;
+padding-top: 100px;
+}
+
+.three-column{
+outline: 1px solid green;
+font-size: 0;
+&__item{
+    outline: 1px solid red;
+    display: inline-block;
+    width: 33,3%;
+    font-size: 16px;
+    height: 150px;
+    
+}
+
+}
+
+@media screen (max-width: 760px){
+    three-column__item{
+        width: 50%;
+    }
+}
