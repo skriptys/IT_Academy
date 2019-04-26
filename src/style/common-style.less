@@ -1,26 +1,133 @@
 
-.main-wrapper{
-max-width: 1024px;
-margin: 0 auto;
-padding-top: 100px;
-}
-
-.three-column{
-outline: 1px solid green;
-font-size: 0;
-&__item{
-    outline: 1px solid red;
-    display: inline-block;
-    width: 33,3%;
-    font-size: 16px;
-    height: 150px;
+body{
+    font-family: 'Proxima Nova Alt';
+    margin: 0 auto;
+    
     
 }
 
+@font-face{
+    font-family: 'Proxima Nova Alt';
+    src: local('Proxima Nova Alt Semibold'), local('Proxima-Nova-Alt-Semibold'),
+    url('ProximaNovaA-Semibold.woff2') format('woff2'),
+    url('ProximaNovaA-Semibold.woff') format('woff'),
+    url('ProximaNovaA-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    color: #ffffff;
+  }
+
+header {
+    background: black;
+    height: 110px;
+    margin: 0 auto;
 }
 
-@media screen (max-width: 760px){
-    three-column__item{
-        width: 50%;
-    }
+.container {
+	width: 1120px;
+	margin: 0 auto;
 }
+
+.logo {
+	margin-top: 25px;
+	float: left;
+}
+
+nav {
+	float: left;
+    margin-top: 45px;
+    padding: 0;
+	margin: 0;
+	display: block;
+}
+
+.menu {
+	margin: 50px;
+	display: block;
+}
+
+.menu li {
+	float: left;
+	display: block;
+	margin-right: 41px;
+}
+
+.menu a {
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.search{
+    color: #ffffff;
+    display: block;
+    position: absolute;
+    right: 90px;
+}
+.bag{
+    color: #ffffff;
+    display: block;
+    position: absolute;
+    right: 60px;
+    
+}
+
+.euro{
+    color: #ffffff;
+    position: absolute;
+    right: 35px;
+    margin-top: 7px;
+}
+
+.snowboard{
+    background: url('../img/snowboard.jpg')no-repeat center top / cover;
+    height: 597px;
+}
+
+.snowboard__titles{
+    font-size: 60px;
+	color: #ffffff;
+	text-transform: uppercase;
+    position: relative;
+    left: 385px;
+    top: 215px;
+}
+
+.button{
+    background: #000000;
+	color: #ffffff;
+	display: block;
+	width: 150px;
+	padding: 20px 0;
+	margin: 0 auto;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+    margin-top: 260px;
+    position: relative;
+    left: 40px;
+}
+
+.desk{
+    height: 1120px;
+    margin: 0 auto;
+}
+
+.desk__titles{
+    font-size: 60px;
+	color: #000000;
+	text-transform: uppercase;
+    text-align: center;
+    padding-top: 170px;
+}
+
+p{
+    font-size: 12px;
+}
+
+.left-arrow,.right-arrow{
+    padding-top: 30px;
+    float: left;
+    }
