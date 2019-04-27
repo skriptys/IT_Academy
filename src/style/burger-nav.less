@@ -1,0 +1,44 @@
+.burger-nav{
+
+display: block;
+width: 250px;
+outline: 1px solid red;
+
+&__opener{
+
+    width: 50px;
+    height: 50px;
+    background-color:green;
+    cursor: pointer;
+    
+    &.open{
+
+background-color: red;
+
+    }
+}
+
+&__items{
+
+overflow: hidden;
+max-height: 0;
+transition: .5s linear;
+
+&.open{
+
+max-height: 500px;
+transition: .5s linear;
+
+}
+
+}
+
+}
+
+.menu-item{
+
+font-size: 16px;
+padding: 5px 10px;
+border: 1px solid grey;
+
+}
