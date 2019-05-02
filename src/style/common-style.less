@@ -8,12 +8,19 @@ body{
 header {
     background: black;
     height: 110px;
-    
 }
 
 .container {
-	width: 1120px;
+    width: 1120px;
+    height: 100px;
 	margin: 0 auto; 
+}
+
+@media (min-width:320px) and (max-width: 1120px){
+    .container {
+    height: 50px;
+    width: 640px;
+    }
 }
 
 .logo {
@@ -30,10 +37,14 @@ nav {
     font-weight: bold;
 }
 
+
 .menu {
 	margin: 50px;
 	display: block;
 }
+
+
+
 
 .menu li {
 	float: left;
@@ -48,6 +59,11 @@ nav {
 	font-size: 14px;
 }
 
+
+.link:hover{
+    color: #2684cd;
+}
+   
 .search{
     color: #ffffff;
     display: block;
@@ -58,8 +74,7 @@ nav {
     color: #ffffff;
     display: block;
     position: absolute;
-    right: 60px;
-    
+    right: 60px;   
 }
 
 .euro{
@@ -68,8 +83,6 @@ nav {
     right: 35px;
     margin-top: 7px;
 }
-
-
 
 .snowboard{
     background: url('../img/snowboard.jpg')no-repeat center top / cover;
@@ -82,7 +95,6 @@ nav {
     left: 45%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-
 }
 .snowboard__titles{
     font-size: 60px;
@@ -104,8 +116,11 @@ nav {
 	font-size: 14px;
     margin-top: 30px;
     font-weight: bold;
-    margin-right: 5px;
-    
+    margin-right: 5px; 
+}
+
+.button:hover{
+    color: aquamarine;
 }
 
 .desk{
@@ -131,14 +146,12 @@ p{
     flex-direction: column;
     margin-left: -122px;
     margin-right: -122px;
-    
-
 }
+
 .boards{
    margin-top: 170px;
    display: flex;
    justify-content: space-between;
-
 }
 
 .row{
@@ -165,7 +178,9 @@ h2{
     color: #ffffff;
     font-size: 60px;
     font-weight: bold;
-    
+    position: relative;
+    left: 150px;
+    top: 200px; 
 }
 
 sup{
@@ -175,13 +190,16 @@ sup{
     top: -1.2em;
 
 }
+
 .text{
     font-size: 12px;
     color:#ffffff;
     line-height: 270%;
     text-align: justify;
+    position: relative;
+    left: 150px;
+    top: 260px;
 }
-
 
 .block{
     height: 680px;
@@ -197,12 +215,10 @@ sup{
     font-weight: bold;
 }
 
-
 .block__img{
     display: flex;
     justify-content: center;
-    padding-top: 50px;
-    
+    padding-top: 50px; 
 }
 
 figure {
@@ -217,20 +233,15 @@ figcaption {
     margin-left: 8px;
 }
 
-.footer__top{
-    background-color: #000000;
-    height: 400px;
-    margin-top: 140px;
-}
 
 .footer_container{
     overflow: hidden;
-    padding: 55px 12px;
-    margin: 0 auto;
-    height: 400px;
-    box-sizing: border-box;
+    padding-left: 0;
     background: #000000;
     color: #ffffff;
+    margin-top: 273px;
+    padding: 90px 0 ;
+
 }
 
 .four-column{
@@ -240,8 +251,8 @@ figcaption {
     text-align: center;
     padding: 0 11px;
     vertical-align: top;
-    
 }
+
 
 h3{
     line-height: 33px;
@@ -250,13 +261,18 @@ h3{
     text-transform: uppercase;
 }
 
+h3:hover{
+    color: red;
+    cursor: pointer;
+
+}
+
 .four-column ul {
     list-style: none;
     margin: 0;
     margin-top: 10px;
     padding-left: 30px;
     text-align: left;
-    
 }
 
 .four-column li a{
@@ -264,7 +280,6 @@ h3{
     text-decoration: none;
     color: #ffffff;
     line-height: 2.0;
-
 }
 
 .soc{
@@ -274,7 +289,6 @@ h3{
     margin-bottom: 18px;
     box-sizing: border-box;
     font-size: 22px;
-    
 }
 
 .soc-search{
@@ -297,27 +311,114 @@ input{
     padding-left: 11px;
     float: left;
     box-sizing: border-box;
-
 }
 
 
 button{
-
     max-width: 36%;
     font-size: 18.7px;
     color: #000000;
     cursor: pointer;
     height: 100%;
     font-weight: 700;
-
 }
-
  
-.media5{
-
-
-
-
+button:hover{
+    color: #d17e0a;
 }
 
+.media5{
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    left: 10px;
+    top: 65px;
+}
+
+.copyright{
+    padding-left: 40px;
+    display: inline-block;
+    margin-top: 110px;
+}
+
+.languages{
+    float: right;
+    padding-right: 40px;
+    display: inline-block;
+    margin-top: 110px;
+}
+
+.contact{
+    padding: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.team{
+    padding: 20px; 
+    display: flex;
+    justify-content: space-between; 
+    
+    text-align: justify;
+}
+
+
+figure {
+    display: inline-block;
+    margin: 0 1em 0 0;
+    vertical-align: top;
+}
+
+figcaption { 
+    font-weight: bold;
+    line-height: 200%;
+    text-align: left;
+}
+
+.shop{
+    padding-bottom: 15px;
+}
+
+h1{
+    font-size: 35px;
+    color: #333;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+
+.coldesk{
+    width: 19%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 12px 12px 10px 12px;
+    position: relative;
+    left: 30px;
+    border: 1px solid #08f108;
+}
+
+.coldesk-img{
+    overflow: hidden;
+    height: 417px;
+    position: relative;
+}
+
+.name{
+    font-size: 32px;
+    margin: 20px 3px;
+    color: blueviolet;
+    letter-spacing: -0.5px;
+    
+}
+
+.sale{
+    color: #f31c0c;
+    font-size: 40px;
+}
 
