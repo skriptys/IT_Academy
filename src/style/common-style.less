@@ -3,25 +3,20 @@ body{
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     margin: 0 auto; 
+    
 }
 
 header {
     background: black;
     height: 110px;
+    
 }
 
 .container {
-    width: 1120px;
-    height: 100px;
-	margin: 0 auto; 
+    max-width: 1240px;
+    margin: 0 auto; 
 }
 
-@media (min-width:320px) and (max-width: 1120px){
-    .container {
-    height: 50px;
-    width: 640px;
-    }
-}
 
 .logo {
 	margin-top: 25px;
@@ -87,14 +82,14 @@ nav {
 .snowboard{
     background: url('../img/snowboard.jpg')no-repeat center top / cover;
     height: 597px;
+       
 }
 
 .position__titles{
     position: absolute;
-    top: 53%;
-    left: 45%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+    top: 38%;
+    left: 30%;
+    
 }
 .snowboard__titles{
     font-size: 60px;
@@ -117,8 +112,43 @@ nav {
     margin-top: 30px;
     font-weight: bold;
     margin-right: 5px; 
-}
 
+    -webkit-animation: pulsing 2s infinite;
+    animation: pulsing 2s infinite;
+  
+  
+  @-webkit-keyframes pulsing {
+    0% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5)
+    }
+    50% {
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5);
+    }
+  }
+  
+  @keyframes pulsing {
+    0% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5)
+    }
+    50% {
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5);
+    }
+  }
+
+}
+    
 .button:hover{
     color: aquamarine;
 }
@@ -159,6 +189,19 @@ p{
     justify-content: space-between;
     margin-top: -350px;
 }
+
+.prev:hover{
+
+    color: darkgray;
+    cursor: pointer;
+}
+
+.next:hover{
+
+    color: darkgray;
+    cursor: pointer;
+}
+
 
 h2{
     font-size: 25px;
@@ -397,17 +440,22 @@ h1{
     width: 19%;
     display: inline-block;
     box-sizing: border-box;
-    padding: 12px 12px 10px 12px;
+    padding: 30px 12px 10px 12px;
     position: relative;
-    left: 30px;
-    border: 1px solid #08f108;
+    left: 30px; 
 }
 
 .coldesk-img{
     overflow: hidden;
     height: 417px;
-    position: relative;
+    position: relative; 
 }
+
+.coldesk-img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
 
 .name{
     font-size: 32px;
@@ -422,3 +470,21 @@ h1{
     font-size: 40px;
 }
 
+
+iframe{
+
+    position: relative;
+    left: 80px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    
+    .container {
+        max-width: 768px; 
+        
+    }
+    .main {
+        margin: 20px;
+    }
+  }
